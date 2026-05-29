@@ -1,0 +1,178 @@
+# Biblio
+
+![Java](https://img.shields.io/badge/Java-17-orange)
+![SQLite](https://img.shields.io/badge/Database-SQLite-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+Biblio is a Java-based library management system using SQLite for local data storage.
+
+The project includes:
+
+* Console CLI application
+* Swing GUI desktop application
+* SQLite database integration
+* Object-oriented architecture
+
+---
+
+# ✨ Features
+
+* 📚 Add paper books and ebooks
+* 🗄️ SQLite database storage
+* 🔍 Search books by title or author
+* ✏️ Edit and delete books
+* 🔄 Check-in / Check-out support
+* 💻 Swing desktop interface
+* ⚡ CLI version included
+* 💾 Local database without server
+
+---
+
+# 🖥️ GUI Preview
+
+*Add screenshot here later*
+
+```text
+assets/screenshot.png
+```
+
+---
+
+# 🛠️ Technologies
+
+* ☕ Java
+* 🗃️ SQLite
+* JDBC
+* Swing
+* Bash
+
+---
+
+# 📁 Project Structure
+
+```text
+biblio/
+├── src/
+│   ├── Main.java
+│   ├── LibraryApp.java
+│   ├── Library.java
+│   ├── Book.java
+│   ├── EBook.java
+│   ├── PaperBook.java
+│   └── DatabaseManager.java
+│
+├── lib/
+│   └── sqlite-jdbc-3.53.1.0.jar
+│
+├── data/
+│   └── library.db
+│
+├── run-cli.sh
+├── run-gui.sh
+├── README.md
+└── .gitignore
+```
+
+---
+
+# 🚀 Running the Project
+
+## 1. Clone repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/biblio.git
+cd biblio
+```
+
+---
+
+# ▶️ Run CLI Version
+
+```bash
+chmod +x run-cli.sh
+./run-cli.sh
+```
+
+---
+
+# 🖥️ Run GUI Version
+
+```bash
+chmod +x run-gui.sh
+./run-gui.sh
+```
+
+---
+
+# ⚙️ Manual Compilation
+
+```bash
+javac -cp ".:lib/sqlite-jdbc-3.53.1.0.jar" src/*.java
+```
+
+---
+
+# ▶️ Manual Launch
+
+## CLI
+
+```bash
+java -cp ".:src:lib/sqlite-jdbc-3.53.1.0.jar" Main
+```
+
+## GUI
+
+```bash
+java -cp ".:src:lib/sqlite-jdbc-3.53.1.0.jar" LibraryApp
+```
+
+---
+
+# 🗄️ Database
+
+The project uses SQLite.
+
+Database file:
+
+```text
+data/library.db
+```
+
+Tables are created automatically on startup.
+
+---
+
+# 📚 Object Model
+
+* `Book` — base class
+* `PaperBook` — paper book
+* `EBook` — electronic book
+* `Library` — library management
+* `DatabaseManager` — SQLite connection
+* `Main` — CLI entry point
+* `LibraryApp` — Swing GUI application
+
+---
+
+# 📌 Future Plans
+
+* [ ] Maven support
+* [ ] Package structure refactoring
+* [ ] REST API
+* [ ] Spring Boot version
+* [ ] Docker support
+* [ ] User authentication
+* [ ] Advanced search and filters
+* [ ] Export/import system
+
+---
+
+# 👨‍💻 Author
+
+Андрей К.
+
+---
+
+# 📄 License
+
+MIT License
