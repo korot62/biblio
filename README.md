@@ -30,11 +30,7 @@ The project includes:
 
 # 🖥️ GUI Preview
 
-
-
-```text
-https://github.com/korot62/biblio/blob/main/assets/GUI_image.png
-```
+![Biblio GUI](assets/GUI_image.png)
 
 ---
 
